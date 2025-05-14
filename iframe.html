@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Chat Queue Status</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+    .chat-box {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .status {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .queue-number {
+      font-weight: bold;
+      color: #1a73e8;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    .input-group label {
+      display: block;
+      font-weight: bold;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0c5fcd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="chat-box">
+    <div class="status">
+      🔄 Please wait. You are <span class="queue-number">3rd</span> in line to be connected to a live agent.
+    </div>
+
+    <form>
+      <div class="input-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="query">Your Query</label>
+        <input type="text" id="query" required>
+      </div>
+
+      <button type="submit">Start Chat</button>
+    </form>
+  </div>
+
+</body>
+</html>
